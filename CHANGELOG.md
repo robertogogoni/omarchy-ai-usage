@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-03-17
+
+### Added
+- **Session token tracking** — Parse Claude Code JSONL files for per-message token totals (output, cache read, cache creation, message count) displayed in Waybar tooltip
+- **Stale cache fallback** — On API errors (429, network), return last known data enriched with fresh session tokens instead of showing error
+- **ccusage integration** — Optional daily cost and per-model breakdown from ccusage, auto-detected binary, 5-minute cache
+- **Token formatting helpers** — `format_tokens()` (24.9K, 6.1M) and `format_cost()` ($26.77) in lib.sh
+- **Dynamic session detection** — Auto-finds active Claude Code session across all projects
+
+### Fixed
+- **HTTP 429 rate limit death spiral** — Removed 429 from retryable errors. Retrying rate limits sends more requests to an already-throttled endpoint, creating a permanent failure loop
+
 ## [1.1.0] — 2026-02-26
 
 ### Added
