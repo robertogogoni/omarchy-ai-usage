@@ -1,3 +1,12 @@
+> [!WARNING]
+> **This project has been superseded by [aifuel](https://github.com/robertogogoni/aifuel).**
+>
+> aifuel is a Go CLI rewrite with: Chrome extension popup with badge, native bubbletea TUI dashboard, Admin API cost/usage/analytics reports, Claude Code statusLine integration, 6+ providers via CodexBar bridge, Catppuccin theming, and interactive Charm installer. It embeds all shell scripts into a single binary.
+>
+> Install: `curl -fsSL https://raw.githubusercontent.com/robertogogoni/aifuel/master/install.sh | bash`
+
+---
+
 # omarchy-ai-usage
 
 AI usage monitoring for [Omarchy](https://omarchy.org/) — track your Claude, Codex, Gemini, and Antigravity rate limits directly from Waybar.
